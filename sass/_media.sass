@@ -1,0 +1,422 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1710px)
+  .categories-img
+    height: 12.5vw
+  .useful img
+    height: 22.9vw
+    padding: 0.9vw
+  .useful-back
+    left: 0.9vw
+    top: 0.9vw
+    width: calc(100% - 1.8vw)
+    height: calc(100% - 1.8vw)
+    padding: 2.6vw 1.8vw 27px
+  .footer-item
+    height: 6.5vw
+  .useful-title
+    margin-bottom: 3.2vw
+  .useful
+    margin: 20px -0.9vw 0
+@media only screen and (max-width : 1425px)
+  .indastries-card
+    width: calc(33.33% - 20px)
+    &:nth-child(3n+3)
+      margin-right: 0
+  .header-right
+    max-width: calc(100% - 255px)
+@media only screen and (max-width : 1230px)
+  .team-img
+    height: 29.2vw
+@media only screen and (max-width : 1200px)
+  .categories-card, .categories-card:nth-child(3n+3)
+    width: calc(50% - 2vw)
+    margin-right: 4vw
+  .categories-card:nth-child(2n+2)
+    margin-right: 0
+  .categories-img
+    height: 17.83vw
+  @supports (-webkit-line-clamp: 4)
+    .useful-title:after
+      display: none !important
+    .line-clamp-7
+      -webkit-line-clamp: 4
+      height: calc(1em * 22px * 4)
+  .header-row
+    padding: 0
+
+@media only screen and (max-width : 993px)
+  .header
+    padding: 0
+  .header-burger
+    display: block
+    margin-right: 15px
+  .header-logo-img
+    width: 60px
+    height: 71px
+  .header-right
+    background: #8B93E5
+    max-width: calc(100% - 20px)
+    position: fixed
+    right: 0
+    top: 0
+    width: 100%
+    height: 100%
+    flex-direction: column
+    justify-content: space-between
+    padding: 40px 30px
+    opacity: 0
+    pointer-events: none
+    transform: translateX(50%)
+    transition: all 0.3s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+      transform: translateX(0)
+  nav
+    width: 100%
+  .header-menu
+    flex-direction: column
+    align-items: flex-start
+  .header-link
+    margin: 0 0 20px
+    display: block
+    padding: 10px 0
+    color: #ffffff
+    &:hover
+      color: #8BE5BA
+  .header-lang
+    display: flex
+    overflow: visible
+    width: auto
+  .header-lang-icon
+    width: 50px
+    margin: 0 10px
+  .welcome-block
+    max-width: 100%
+    padding: 30px 15px
+  section, .fourth
+    padding-top: 40px
+  .fifth
+    padding-top: 32px
+    padding-bottom: 10px
+  .btn-normal
+    font-size: 18px
+    line-height: 47px
+    min-width: 136px
+    margin: 0 8px 8px
+  .indastries-card
+    padding: 20px 12px 5px
+  .indastries-icon
+    margin: 0 auto 16px
+    height: 30px
+  .indastries-title
+    font-size: 14px
+    line-height: 17px
+    min-height: 34px
+  .indastries-text
+    display: none
+  .indastries
+    max-width: 700px
+    margin: 0 auto
+    width: 100%
+  .btn-white
+    line-height: 58px
+  .categories-card, .categories-card:nth-child(3n+3)
+    margin: 20px 20px 0 0
+    width: calc(50% - 10px)
+    padding: 0
+  .categories-card:nth-child(2n+2)
+    margin: 20px 0 0 0
+  .categories-title
+    font-size: 18px
+  .btn-blue
+    max-width: 136px
+    line-height: 50px
+  .categories-row
+    margin-bottom: 10px
+  .categories-img
+    margin-bottom: 10px
+  .categories-text, .tabs-drop-text, .team-text, .useful-text
+    font-size: 14px
+    line-height: 17px
+  .tabs-drop-text
+    margin-bottom: 20px
+  .tabs-drop-title
+    font-size: 24px
+    line-height: 29px
+    margin: 20px 0
+  .who-item
+    margin-bottom: 31px
+  .tabs-drop-flex
+    justify-content: center
+    margin-top: 58px
+  .team-title
+    font-size: 18px
+    margin-bottom: 10px
+  .team-span
+    font-size: 16px
+    margin-bottom: 25px
+  .team-card
+    margin-right: 10px
+  .slick-dots
+    margin-top: 10px
+  .team-slider
+    padding-bottom: 20px
+  .vacancies-plus
+    width: 40px
+    height: 40px
+  .vacancies-item
+    padding: 10px
+    &:last-child
+      margin-bottom: 30px
+  .vacancies-title
+    font-size: 14px
+  .reviews-card
+    min-height: 255px
+    background: #FFFFFF url("../img/Group.svg") no-repeat center/100% 164px
+    padding: 45px 15px
+    margin: 10px 5px 75px
+  .reviews-quote
+    width: 50px
+    height: 50px
+    background: #8B93E5 url("../img/right-quote-sign 1.svg") no-repeat center/100% 22px
+  .reviews-img
+    width: 50px
+    height: 50px
+  .reviews-name
+    font-size: 18px
+    line-height: 22px
+  .reviews-span, .useful-title
+    font-size: 16px
+    line-height: 19px
+  .reviews-user
+    bottom: calc(-50% - 8px)
+  .reviews-slider
+    padding-bottom: 20px
+    margin: 0 -5px 20px
+  .sixth
+    padding: 30px 0
+  .title
+    font-size: 18px
+    line-height: 22px
+  .contact-flex
+    margin-top: 31px
+  .contact-title
+    font-size: 20px
+    line-height: 24px
+    margin-bottom: 10px
+  .contact-text
+    font-size: 20px
+    line-height: 24px
+  .contact-list
+    margin-top: 20px
+  .contact-info
+    font-size: 18px
+    line-height: 22px
+  .form-input
+    line-height: 50px
+    font-size: 18px
+    margin-bottom: 10px
+    &::-webkit-input-placeholder
+      line-height: 50px
+      font-size: 18px
+    &:-moz-placeholder
+      line-height: 50px
+      font-size: 18px
+    &::-moz-placeholder
+      line-height: 50px
+      font-size: 18px
+    &:-ms-input-placeholder
+      line-height: 50px
+      font-size: 18px
+  .form-textarea
+    font-size: 18px
+    padding: 15px 35px
+    line-height: 22px
+    min-height: 106px
+    margin-bottom: 21px
+  .form-send
+    margin: 0
+    width: 100%
+    font-size: 20px
+    line-height: 48px
+  .footer-col
+    width: 50%
+    padding-bottom: 30px
+    &:nth-child(2n+2)
+      padding-right: 0
+      padding-left: 0
+  .footer-item
+    height: 14.1vw
+  .footer-list
+    margin-bottom: 20px
+  .useful-title
+    margin-bottom: 10px
+  .footer-copyright
+    font-size: 14px
+  .footer-social-icon
+    width: 20px
+    height: 20px
+  .footer-social-link
+    margin-left: 15px
+  .footer-bottom
+    padding: 26px 15px 55px
+  .who-we-text
+    font-size: 20px
+    line-height: 24px
+    margin-bottom: 15px
+  .who-we-svg
+    height: 150px
+    width: auto
+@media only screen and (max-width : 767px)
+  .who-item
+    width: 50%
+    margin-bottom: 31px
+@media only screen and (max-width : 600px)
+  .who-item
+    width: 100%
+    padding: 0
+  .welcome-block
+    flex-direction: column
+  .welcome-text
+    margin: 0 0 22px 0
+  .btn-white
+    width: 100%
+  .btn-normal
+    width: calc(50% - 8px)
+    margin: 0 16px 8px 0
+    &:nth-child(2n+2), &:last-child
+      margin: 0 0 8px 0
+  .indastries
+    padding-top: 12px
+  .indastries-card, .indastries-card:nth-child(3n+3)
+    margin: 0 16px 16px 0
+    width: calc(50% - 8px)
+    &:nth-child(2n+2), &:last-child
+      margin: 0 0 16px 0
+  .third
+    padding-top: 24px
+  .categories-card, .categories-card:nth-child(2n+2), .categories-card:nth-child(3n+3)
+    margin: 8px 0 12px
+    width: 100%
+  .categories-img
+    height: 35.6vw
+  .more
+    display: block
+  .useful-big
+    width: 100%
+  .useful-half
+    width: 50%
+  .useful
+    margin: 4px -8px 0
+  .useful img
+    height: 42.5vw
+    padding: 8px
+  .useful-back
+    left: 8px
+    top: 8px
+    width: calc(100% - 16px)
+    height: calc(100% - 16px)
+    padding: 5px
+  .line-clamp-7
+    -webkit-line-clamp: 7
+    height: calc(1em * 17px * 7)
+  .team-slide
+    flex-direction: column
+  .team-card, .reviews-card
+    max-width: 100%
+    width: 100%
+    margin: 0 0 10px 0
+  .reviews-card
+    margin: 38px 0 120px 0
+  .team-slide
+    padding-top: 12px
+  .team-img
+    height: 59.68vw
+    border-radius: 5px
+  .slick-slide
+    padding: 0 15px
+  .contact-flex
+    flex-direction: column
+  .contact-left
+    display: flex
+    flex-direction: column-reverse
+    width: 100%
+    padding: 0
+  .contact-flex
+    margin-top: 30px
+  .contact-list
+    margin: 0 0 20px 0
+  .contact-title
+    margin: 14px auto
+    text-align: center
+  .contact-right, .contact-form
+    width: 100%
+    max-width: 100%
+    padding: 0
+    margin-top: 5px
+  .footer
+    padding: 20px 0 70px
+  .footer-col
+    width: 100%
+    padding: 0 0 26px 0
+    &:last-child
+      margin-top: 20px
+  .footer-logo
+    display: flex
+  .footer-icon
+    max-width: 74px
+    max-height: 58px
+    height: 100%
+    margin: 0 25px 0 0
+  .footer-text
+    font-size: 14px
+    line-height: 17px
+  .footer-title
+    padding: 0
+    margin-bottom: 10px
+    font-size: 16px
+  .footer-list
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+  .footer-list, .footer-link
+    font-size: 16px
+    line-height: 19px
+  .footer-item, .footer-item:nth-child(3n+3)
+    width: calc(50% - 8px)
+    height: 42.81vw
+    margin: 0 16px 16px 0
+    &:nth-child(2n+2)
+      margin: 0 0 16px 0
+  .footer-flex
+    padding-bottom: 24px
+  .footer-top
+    position: absolute
+    bottom: 55px
+    left: 50%
+    z-index: 1
+    transform: translateX(-50%)
+  .first
+    background: url(../img/cellphone-mob.jpg) no-repeat center 0/100% calc(100vh - 164px)
+  .tabs
+    justify-content: flex-start
+  .categories
+    margin-top: 4px
+  @supports (-webkit-line-clamp: 3)
+    .useful-title:after
+      display: none !important
+    .line-clamp-3
+      -webkit-line-clamp: 3
+      height: calc(1em * 17px * 3)
+  .tabs-drop-title
+    margin: 12px 0 20px
+@media only screen and (max-width : 480px)
+  .line-clamp-7
+    -webkit-line-clamp: 3
+    height: calc(1em * 17px * 3)
+
